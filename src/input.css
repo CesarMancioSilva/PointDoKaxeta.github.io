@@ -2,7 +2,7 @@
 @tailwind components;
 @layer components{
     .menuLargeScreen{
-        @apply w-full top-[-300px] left-0 absolute px-20 py-3 bg-bgmenu transition ease-in-out duration-1000 flex justify-center flex-wrap gap-10 content-center items-center
+        @apply w-full top-[-400px] left-0 absolute px-20 py-3 bg-bgmenu transition ease-in-out duration-1000 flex justify-center flex-wrap gap-10 content-center items-center
     }
     .menuSmallScreen{
         @apply w-2/3 h-[calc(100vh-65px)] flex  flex-col gap-3 py-5 px-4 absolute top-0 left-[-100%] transition ease-in-out duration-1000

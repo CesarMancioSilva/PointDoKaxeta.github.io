@@ -19,7 +19,7 @@ document.querySelector('.toggle').addEventListener('click',()=>{
             if(!menu.classList.contains('menuLargeScreen')){
                 menu.classList.add('menuLargeScreen')
             }
-            menu.classList.remove('top-[-300px]')
+            menu.classList.remove('top-[-400px]')
             menu.classList.remove('left-[-100%]')
             menu.classList.add('left-0')
             menu.classList.add('top-[60px]')
@@ -29,7 +29,7 @@ document.querySelector('.toggle').addEventListener('click',()=>{
             if(!menu.classList.contains('menuSmallScreen')){
                 menu.classList.add('menuSmallScreen')
             }
-            menu.classList.remove('top-[-300px]')
+            menu.classList.remove('top-[-400px]')
             menu.classList.add('top-[60px]')
             menu.classList.remove('left-[-100%]')
             menu.classList.add('left-0')
@@ -39,7 +39,7 @@ document.querySelector('.toggle').addEventListener('click',()=>{
     }else{
         if(screenWdSize>=565){
             menu.classList.remove('top-[60px]')
-            menu.classList.add('top-[-300px]')
+            menu.classList.add('top-[-400px]')
             if(screenWdSize>900){
                 btnNav.classList.remove('hidden')
             }
