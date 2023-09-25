@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body class="bg-bgblack">
+    <nav class="w-full border flex justify-between lg:px-48 xl:px-54 py-3 sm:px-10 cl:px-10 relative top-0 bg-secondary z-50">
+        <div class="flex justify-between w-auto  gap-x-16">
+            <span class="toggle bi bi-list text-3xl cursor-pointer text-primary " ></span>
+            <button class="btnNav cl:hidden sm:block border-4 font-bold border-primary text-primary px-4 py-1 rounded-md cursor-pointer hover:bg-primary hover:text-bgblack transition ease-in-out duration-300">Montar açai</button>
+        </div>
+        <div class="flex justify-between w-auto  gap-x-16">
+            <span class="iconCart bi bi-cart text-3xl cursor-pointer text-primary"></span>
+        </div>
+        
+    </nav>  
+    <ul class="menu bg-bgmenu menuLargeScreen delay-1000">
+        <li class="btnNavigate btnSelected home" ><span class="bi bi-house-door-fill text-bgblack"></span> Inicio</li> 
+        <li class="btnNavigate btnOption montagem_acai"  >Montar açai</li>
+        <li class="btnNavigate btnOption genericList" >Sobremmesas</li>
+        <li class="btnNavigate btnOption genericList" >Bebidas</li>
+        <li class="btnNavigate btnOption cart" >Carrinho</li>
+    </ul>
+
+
+    <div class="content w-full h-full  lg:px-48 xl:px-54 py-3 sm:px-10 cl:px-10">
+        <div class="session home_session w-full h-auto bg-primary ">Home</div>
+        <div class="session montagem_acai_session w-full h-auto bg-primary hidden">Monatgem de açai</div>
+        <div class="session options_generic_list_session w-full h-auto bg-primary hidden">Lista de opções generica</div>
+        <div class="session cart_session w-full h-auto bg-primary hidden">Carrinho</div>
+
+    </div>
+    
+    <script type="module" src="main.js"></script>
+</body>
