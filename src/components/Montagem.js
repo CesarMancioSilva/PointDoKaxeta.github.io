@@ -1,4 +1,4 @@
-import { montagemAcai } from "../../dist/main.js"
+import { montagemAcai } from "../../dist/index.js"
 const elementFromHtml=(html)=>{
     let htmlText = html.trim();
     return htmlText
