@@ -640,16 +640,16 @@ video {
   left: -100%;
 }
 
-.top-0 {
-  top: 0px;
-}
-
 .top-\[-300px\] {
   top: -300px;
 }
 
 .top-\[60px\] {
   top: 60px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .z-50 {
