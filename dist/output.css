@@ -563,7 +563,7 @@ video {
   top: 0px;
   left: -100%;
   display: flex;
-  height: calc(100vh - 65px);
+  height: calc(100vh - 60px);
   width: 66.666667%;
   flex-direction: column;
   gap: 0.75rem;
