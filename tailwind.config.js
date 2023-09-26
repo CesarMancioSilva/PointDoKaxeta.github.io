@@ -17,7 +17,8 @@ module.exports = {
       primary:"#E1D652",
       bgblack:"#121212",
       secondary:"#332F2E",
-      bgmenu:"#474443"
+      bgmenu:"#474443",
+      white:'#fff'
     },
     extend: {},
   },
