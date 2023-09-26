@@ -2,10 +2,10 @@
 @tailwind components;
 @layer components{
     .menuLargeScreen{
-        @apply w-full top-[-400px] left-0 absolute px-20 py-3 bg-bgmenu transition ease-in-out duration-1000 flex justify-center flex-wrap gap-10 content-center items-center
+        @apply w-full top-[-400px] left-0 fixed px-20 py-3 bg-bgmenu transition ease-in-out duration-1000 flex justify-center flex-wrap gap-10 content-center items-center
     }
     .menuSmallScreen{
-        @apply w-2/3 h-[calc(100vh-65px)] flex  flex-col gap-3 py-5 px-4 absolute top-0 left-[-100%] transition ease-in-out duration-1000
+        @apply w-2/3 h-[calc(100vh-65px)] flex  flex-col gap-3 py-5 px-4 fixed top-0 left-[-100%] transition ease-in-out duration-1000
     }
     .btnOption{
         @apply border-bgmenu border-4 px-4 py-1 text-primary font-bold rounded-md cursor-pointer hover:bg-primary  hover:text-bgblack hover:border-primary transition ease-in-out duration-1000
@@ -14,7 +14,7 @@
         @apply border-primary bg-primary border-4 px-4 py-1 text-bgblack font-bold rounded-md cursor-pointer hover:opacity-80
     }
     .card{
-        @apply  w-[30%] cl:h-60 md:h-96 min-w-[160px] max-w-[290px] bg-secondary cl:flex-nowrap md:flex-wrap rounded-lg cursor-pointer flex flex-col items-center justify-between cl:w-[40%]
+        @apply  w-[30%] cl:h-60 sm:h-72 md:h-96 min-w-[160px] max-w-[250px] bg-secondary cl:flex-nowrap md:flex-wrap rounded-lg cursor-pointer flex flex-col items-center justify-between cl:w-[40%] hover:scale-105 transition ease-in-out duration-300
     }
 }
 @tailwind utilities;

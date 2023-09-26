@@ -535,7 +535,7 @@ video {
 }
 
 .menuLargeScreen {
-  position: absolute;
+  position: fixed;
   top: -400px;
   left: 0px;
   display: flex;
@@ -559,7 +559,7 @@ video {
 }
 
 .menuSmallScreen {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: -100%;
   display: flex;
@@ -632,7 +632,7 @@ video {
   display: flex;
   width: 30%;
   min-width: 160px;
-  max-width: 290px;
+  max-width: 250px;
   cursor: pointer;
   flex-direction: column;
   align-items: center;
@@ -640,6 +640,17 @@ video {
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(51 47 46 / var(--tw-bg-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 100px) {
@@ -650,6 +661,12 @@ video {
   }
 }
 
+@media (min-width: 576px) {
+  .card {
+    height: 18rem;
+  }
+}
+
 @media (min-width: 1150px) {
   .card {
     height: 24rem;
@@ -657,8 +674,8 @@ video {
   }
 }
 
-.relative {
-  position: relative;
+.fixed {
+  position: fixed;
 }
 
 .sticky {
@@ -711,6 +728,10 @@ video {
 
 .mt-7 {
   margin-top: 1.75rem;
+}
+
+.mt-\[60px\] {
+  margin-top: 60px;
 }
 
 .flex {
@@ -922,10 +943,6 @@ video {
 @media (min-width: 100px) {
   .cl\:hidden {
     display: none;
-  }
-
-  .cl\:gap-2 {
-    gap: 0.5rem;
   }
 
   .cl\:gap-3 {
