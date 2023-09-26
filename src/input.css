@@ -14,7 +14,7 @@
         @apply border-primary bg-primary border-4 px-4 py-1 text-bgblack font-bold rounded-md cursor-pointer hover:opacity-80
     }
     .card{
-        @apply  w-[30%] h-96 min-w-[240px] max-w-[290px] bg-secondary rounded-lg cursor-pointer flex flex-col items-center justify-between
+        @apply  w-[30%] cl:h-60 md:h-96 min-w-[160px] max-w-[290px] bg-secondary cl:flex-nowrap md:flex-wrap rounded-lg cursor-pointer flex flex-col items-center justify-between cl:w-[40%]
     }
 }
 @tailwind utilities;

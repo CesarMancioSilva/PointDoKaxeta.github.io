@@ -630,9 +630,8 @@ video {
 
 .card {
   display: flex;
-  height: 24rem;
   width: 30%;
-  min-width: 240px;
+  min-width: 160px;
   max-width: 290px;
   cursor: pointer;
   flex-direction: column;
@@ -643,8 +642,27 @@ video {
   background-color: rgb(51 47 46 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 100px) {
+  .card {
+    height: 15rem;
+    width: 40%;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 1150px) {
+  .card {
+    height: 24rem;
+    flex-wrap: wrap;
+  }
+}
+
 .relative {
   position: relative;
+}
+
+.sticky {
+  position: sticky;
 }
 
 .left-0 {
@@ -753,10 +771,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-8 {
-  gap: 2rem;
 }
 
 .gap-x-16 {
@@ -910,9 +924,23 @@ video {
     display: none;
   }
 
+  .cl\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .cl\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
   .cl\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .cl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .cl\:text-4xl {
@@ -931,6 +959,11 @@ video {
     padding-right: 2.5rem;
   }
 
+  .sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -938,6 +971,15 @@ video {
 }
 
 @media (min-width: 1150px) {
+  .md\:gap-8 {
+    gap: 2rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
