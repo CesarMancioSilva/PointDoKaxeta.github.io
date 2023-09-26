@@ -1,5 +1,5 @@
-// import { Home } from "../src/components/Home.js"
-// import { Montagem } from "../src/components/Montagem.js"
+import { Home } from "../src/components/Home.js"
+import { Montagem } from "../src/components/Montagem.js"
 
 const menuButton = document.querySelector('.toggle')
 const menu = document.querySelector('.menu')
@@ -87,11 +87,11 @@ navButtons.map(button => {
         })
         console.log(button.classList)
         if(button.classList.contains('home')){
-            // Home()
-            // document.querySelector('.home_session').classList.remove('hidden')
+            Home()
+            document.querySelector('.home_session').classList.remove('hidden')
         }else if(button.classList.contains('montagem_acai')){
-            // Montagem()
-            // document.querySelector('.montagem_acai_session').classList.remove('hidden')
+            Montagem()
+            document.querySelector('.montagem_acai_session').classList.remove('hidden')
         }
     })
 })
