@@ -928,6 +928,10 @@ video {
     gap: 0.5rem;
   }
 
+  .cl\:gap-3 {
+    gap: 0.75rem;
+  }
+
   .cl\:px-1 {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
