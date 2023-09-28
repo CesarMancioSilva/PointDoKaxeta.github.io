@@ -22,6 +22,9 @@ module.exports = {
       white:'#fff',
       red:"red"
     },
+    fontFamily:{
+        body:['Roboto']
+    },
     extend: {},
   },
   plugins: [],
