@@ -15,17 +15,17 @@
     </style>
 </head>
 <body class="bg-bgblack">
-    <nav class="w-full border flex justify-between lg:px-48 xl:px-54 py-3 sm:px-10 cl:px-10 fixed top-0 bg-secondary z-50">
+    <nav class="w-full border flex justify-between lg:px-48 xl:px-54 py-3 sm:px-10 cl:px-10 fixed top-0 bg-secondary z-50 ">
         <div class="flex justify-between w-auto  gap-x-16">
             <span class="toggle bi bi-list text-3xl cursor-pointer text-primary " ></span>
-            <button class="btnNav cl:hidden sm:block border-4 font-bold border-primary text-primary px-4 py-1 rounded-md cursor-pointer hover:bg-primary hover:text-bgblack transition ease-in-out duration-300">Montar açai</button>
+            
         </div>
         <div class="flex justify-between w-auto  gap-x-16">
             <span class="iconCart bi bi-cart text-3xl cursor-pointer text-primary"></span>
         </div>
         
     </nav>  
-    <ul class="menu bg-bgmenu menuLargeScreen delay-1000">
+    <ul class="menu bg-bgmenu menuLargeScreen delay-1000 z-50">
         <li class="btnNavigate btnSelected home sticky" ><span class="bi bi-house-door-fill text-bgblack"></span> Inicio</li> 
         <li class="btnNavigate btnOption montagem_acai"  >Montar açai</li>
         <li class="btnNavigate btnOption genericList" >Sobremmesas</li>
@@ -38,7 +38,52 @@
     </div> -->
 
     <div class="content w-full h-full cl:px-1  lg:px-48 xl:px-54 py-3 sm:px-5 mt-[60px]">
-        <div class="session home_session w-full h-auto   text-white p-0  flex flex-col items-center mt-10 pb-32 hidden">
+        
+        <div class="session home_session w-full h-auto  text-white p-0 transition ease-in-out duration-200 flex flex-col items-center mt-10 pb-32 hidden">
+ 
+            <div class="carousel  w-[330px] qcl:w-[400px] sm:w-[450px] md:w-[550px] relative">
+
+                <div class="carousel_container w-[280px] qcl:w-[350px] sm:w-[400px] md:w-[500px] flex relative  z-0 m-auto  overflow-hidden">
+                    <div class="slide transform ease-in-out   duration-500 flex ">
+                        <div class="img_contain text-center block min-w-[280px] qcl:w-[350px] sm:min-w-[400px] md:min-w-[500px]">
+                            <img class="w-full max-h-[295px]" src="../src/imgs/brasil.webp" alt="">
+                            <p class="relative bottom-12 bg-bgblack bg-opacity-70 font-bold m-2">imagem 1</p>
+                        </div>
+                        <div class="img_contain text-center block min-w-[280px] qcl:w-[350px] sm:min-w-[400px] md:min-w-[500px]">
+                            <img class="w-full max-h-[295px]" src="../src/imgs/brasil.webp" alt="">
+                            <p class="relative bottom-12 bg-bgblack bg-opacity-70 m-2">imagem 2</p>
+                        </div>
+                        <div class="img_contain text-center block min-w-[280px] qcl:w-[350px] sm:min-w-[400px] md:min-w-[500px]">
+                            <img class="w-full max-h-[295px]" src="../src/imgs/brasil.webp" alt="">
+                            <p class="relative bottom-12 bg-bgblack bg-opacity-70 m-2">imagem 3</p>
+                        </div>
+                        <div class="img_contain text-center block min-w-[280px] qcl:w-[350px] sm:min-w-[400px] md:min-w-[500px]">
+                            <img class="w-full max-h-[295px]" src="../src/imgs/brasil.webp" alt="">
+                            <p class="relative bottom-12 bg-bgblack bg-opacity-70 font-bold m-2">imagem 1</p>
+                        </div>
+                        <div class="img_contain text-center block min-w-[280px] qcl:w-[350px] sm:min-w-[400px] md:min-w-[500px]">
+                            <img class="w-full max-h-[295px]" src="../src/imgs/brasil.webp" alt="">
+                            <p class="relative bottom-12 bg-bgblack bg-opacity-70 m-2">imagem 2</p>
+                        </div>
+                        <div class="img_contain text-center block min-w-[280px] qcl:w-[350px] sm:min-w-[400px] md:min-w-[500px]">
+                            <img class="w-full max-h-[295px]" src="../src/imgs/brasil.webp" alt="">
+                            <p class="relative bottom-12 bg-bgblack bg-opacity-70 m-2">imagem 3</p>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <span class="bi bi-chevron-left absolute left-[-8px] qcl:left-[0px] sm:left-[-20px] z-20 top-[45%] cursor-pointer text-3xl text-primary">s</span>
+                <span class="bi bi-chevron-right absolute right-[-8px] qcl:right-[0px] sm:right-[-20px] z-20 top-[45%] cursor-pointer text-3xl text-primary">s</span>
+
+                <div class="image_circle_contain flex gap-2 absolute left-[50%] bottom-0">
+                    <!-- <div class="image_circle circleCarousel   bg-primary"></div>
+                    <div class="image_circle circleCarousel "></div>
+                    <div class="image_circle circleCarousel "></div> -->
+                </div>
+            </div>
+
             <div class="w-full  flex cl:gap-3 md:gap-8 flex-wrap justify-center mt-7">
                 <div class="card p-5">
                     <img src="https://images.pexels.com/photos/1739347/pexels-photo-1739347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"class="bg-white w-full h-[70%] rounded-lg"  alt="foto do produto">
@@ -49,21 +94,73 @@
                     <h1 class="font-bold cl:text-2xl md:text-3xl mb-3">Sobremesas</h1>
                 </div>
                 <div class="card p-5">
-                    <img src="https://images.pexels.com/photos/1739347/pexels-photo-1739347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="bg-white w-full h-[70%] rounded-lg"  alt="foto do produto">
+                    <img src="https://web.whatsapp.com/c8687fa4-ed0d-4b91-87c6-af9f330b1db4" class="bg-white w-full h-[70%] rounded-lg"  alt="foto do produto">
                     <h1 class="font-bold cl:text-2xl md:text-3xl mb-3">Bebidas</h1>
                 </div>
             </div>
             <span class="bi bi-instagram text-5xl mb-2 text-primary mt-14"></span>
             <h1>@pointdokaxeta</h1>
+        </div> 
+
+
+        <div class="session montagem_acai_session w-full h-auto bg-primary hidden">Monaem de açai</div>
+
+
+
+
+
+
+
+
+        <div class="session options_generic_list_session w-full h-auto text-white p-0 border border-primary flex flex-col items-center mt-10 pb-32">
+            <table class="mt-5 ">
+                <thead>
+                    <tr>
+                        <th colspan="3" class="border rounded-lg font-bold text-center p-2">
+                            <span>"Categoria"</span> disponiveis
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody class="border">
+                    <tr class="border relative">
+                        <td class="border-b p-2">
+                            <img class="w-32" src="../src/imgs/WIN_20230826_08_41_45_Pro.jpg" alt="">
+                        </td>
+                        <td class="border-b px-4">
+                            <h2 class="font-bold mb-2">Bolo de poteaaaaaa</h2>
+                            <h3 >Preço R$</h3>
+                        </td>
+                        <td class="border-b px-5">
+                            <div class="flex gap-2">
+
+                                <div class="plusBtn rounded-full w-6 h-6 flex items-center justify-center cursor-pointer bg-white">
+                                    <span></span>
+                                </div>
+                                <span>0</span>
+                                <div class="plusBtn rounded-full w-6 h-6 flex items-center justify-center bg-white">
+                                
+                            </div>
+                        </td>
+                        
+                    </tr>
+                    </tbody>
+                </table>
+                <div></div>
+                
         </div>
 
 
-        <div class="session montagem_acai_session w-full h-auto bg-primary hidden">Monatgem de açai</div>
 
-        <div class="session options_generic_list_session w-full h-auto bg-primary">Lista de opções generica</div>
+
+
+
+
+
+
+
+
         <div class="session cart_session w-full h-auto bg-primary hidden">Carrinho</div>
 
     </div>
-    
-    <script type="module" src="index.js"></script>
+    <script type="module" src="main.js"></script>
 </body>

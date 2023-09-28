@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     screens:{
       'cl':'100px',
+      "qcl":'480px',
       'sm': '576px',
       // => @media (min-width: 576px) { ... }
 
@@ -18,7 +19,8 @@ module.exports = {
       bgblack:"#121212",
       secondary:"#332F2E",
       bgmenu:"#474443",
-      white:'#fff'
+      white:'#fff',
+      red:"red"
     },
     extend: {},
   },
