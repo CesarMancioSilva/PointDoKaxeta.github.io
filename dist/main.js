@@ -3,7 +3,7 @@
 // import { previousSlide } from "../src/components/Home.js"
 // import { nextSlide } from "../src/components/Home.js"
 //
-import { Montagem } from "../src/components/Montagem.js"
+// import { Montagem } from "../src/components/Montagem.js"
 
 const menuButton = document.querySelector('.toggle')
 const menu = document.querySelector('.menu')
