@@ -1293,6 +1293,10 @@ video {
     right: 0px;
   }
 
+  .qcl\:max-h-\[455px\]{
+    max-height: 455px;
+  }
+
   .qcl\:w-\[350px\]{
     width: 350px;
   }
