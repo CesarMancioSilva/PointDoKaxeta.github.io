@@ -91,14 +91,18 @@ const listLoad=()=>{
 listLoad()
 
 const nextSlide=()=>{
-    console.log(slideStage)
-    if(slideStage==0){
-        document.querySelector('.backSlide').classList.remove('hidden')
-        document.querySelector('.backHome').classList.add('hidden')
-        slideStage++
-    }else if(slideStage == totalSlides.length-2){
+    
+    // if(slideStage==0){
+    //     document.querySelector('.backSlide').classList.remove('hidden')
+    //     document.querySelector('.backHome').classList.add('hidden')
+    //     slideStage++
+    // }
+    if(slideStage == totalSlides.length-2){
+        console.log('a')
         document.querySelector('.openConfirmSend').classList.remove('hidden')
         document.querySelector('.nextSlide').classList.add('hidden')
+        document.querySelector('.backHome').classList.add('hidden')
+        document.querySelector('.backSlide').classList.remove('hidden')
         slideStage++
     }
     else{
@@ -107,11 +111,15 @@ const nextSlide=()=>{
     changeSlide()
 }
 const previousSlide=()=>{
+    console.log(slideStage)
     if(slideStage==1){
         document.querySelector('.backSlide').classList.add('hidden')
         document.querySelector('.backHome').classList.remove('hidden')
+        document.querySelector('.openConfirmSend').classList.add('hidden')
+        document.querySelector('.nextSlide').classList.remove('hidden')
         slideStage--
     }else if(slideStage == totalSlides.length-1){
+        
         document.querySelector('.openConfirmSend').classList.add('hidden')
         document.querySelector('.nextSlide').classList.remove('hidden')
         slideStage--
