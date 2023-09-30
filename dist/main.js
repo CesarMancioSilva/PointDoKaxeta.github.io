@@ -133,7 +133,7 @@ const nextSlide=()=>{
     }
     setCircle(slideStage)
 }
-var ncarouselIntervId = setInterval(nextSlide, 5000);
+var ncarouselIntervId = setInterval(nextSlide, 4000);
 const previousSlide=()=>{
     if(slideStage == 0){
         slideStage=totalImgs.length - 1
