@@ -133,7 +133,6 @@ const nextSlide=()=>{
     }
     setCircle(slideStage)
 }
-var ncarouselIntervId = setInterval(nextSlide, 4000);
 const previousSlide=()=>{
     if(slideStage == 0){
         slideStage=totalImgs.length - 1
@@ -144,6 +143,7 @@ const previousSlide=()=>{
     }
     setCircle(slideStage)
 }
+var ncarouselIntervId = setInterval(nextSlide, 5000);
 const setCircle=(i)=>{
     var circles = [...document.querySelectorAll(".circleCarousel")]
     
