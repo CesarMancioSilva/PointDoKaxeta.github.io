@@ -21,10 +21,9 @@ module.exports = {
       bgmenu:"#474443",
       white:'#fff',
       red:"red"
-    },
-    fontFamily:{
-        body:['Roboto']
-    },
+    }, fontFamily:{
+      body:['Roboto']
+  },
     extend: {},
   },
   plugins: [],

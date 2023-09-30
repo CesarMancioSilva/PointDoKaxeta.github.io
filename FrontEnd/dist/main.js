@@ -4,7 +4,7 @@
 // import { nextSlide } from "../src/components/Home.js"
 //
 // import { Montagem } from "../src/components/Montagem.js"
-
+// import { genericList} from "../src/components/GenericList.js"
 const menuButton = document.querySelector('.toggle')
 const menu = document.querySelector('.menu')
 const btnNav = document.querySelector('.btnNav')
@@ -65,46 +65,50 @@ document.querySelector('.iconCart').addEventListener('mouseout',(e)=>{
 })
 //bi bi-x-lg
 
-const navButtons = [...document.querySelectorAll('.btnNavigate')]
-const sessions = [...document.querySelectorAll('.session')]
+// const navButtons = [...document.querySelectorAll('.btnNavigate')]
+// const sessions = [...document.querySelectorAll('.session')]
 
 
-navButtons.map(button => {
-    button.addEventListener('click', event => {
-        navButtons.map((navButton)=>{
-            navButton.classList.remove('btnSelected')
-            if(!navButton.classList.contains('btnOption')){
-                navButton.classList.add('btnOption')
-            }
-        })
-        button.classList.add('btnSelected')
-        console.log(button.classList.contains('home'))
+// navButtons.map(button => {
+//     button.addEventListener('click', event => {
+//         navButtons.map((navButton)=>{
+//             navButton.classList.remove('btnSelected')
+//             if(!navButton.classList.contains('btnOption') && !navButton.classList.contains('card')){
+//                 navButton.classList.add('btnOption')
+//             }
+//         })
+        
+//         button.classList.add('btnSelected')
+//         console.log(button.classList.contains('home'))
 
-        sessions.map((session)=>{
-            if(!session.classList.contains('hidden')){
-                session.classList.add('hidden')
-            }
-        })
-        console.log(button.classList)
-        if(button.classList.contains('home')){
-            // Home()
-            document.querySelector('.home_session').classList.remove('hidden')
-        }else if(button.classList.contains('montagem_acai')){
-            Montagem()
-            document.querySelector('.montagem_acai_session').classList.remove('hidden')
-        }
-    })
-})
+//         sessions.map((session)=>{
+//             if(!session.classList.contains('hidden')){
+//                 session.classList.add('hidden')
+//             }
+//         })
+//         console.log(button.classList)
+//         if(button.classList.contains('home')){
+//             // Home()
+//             document.querySelector('.home_session').classList.remove('hidden')
+//         }else if(button.classList.contains('montagem_acai')){
+//             Montagem()
+//             document.querySelector('.montagem_acai_session').classList.remove('hidden')
+//         }else if(button.classList.contains('genericList')){
+            
+//             document.querySelector('.options_generic_list_session').classList.remove('hidden')
+//         }
+//     })
+// })
 
 
 
-const homeSession = document.querySelector('.home_session')
-const montagemAcai = document.querySelector('.home_session')
-const option_generic_list = document.querySelector('.home_session')
-const cartSession= document.querySelector('.home_session')
-const slide = document.querySelector('.slide')
+// const homeSession = document.querySelector('.home_session')
+// const montagemAcai = document.querySelector('.home_session')
+// const option_generic_list = document.querySelector('.options_generic_list_session')
+// const cartSession= document.querySelector('.home_session')
+ const slide = document.querySelector('.slide')
 
-export {montagemAcai,option_generic_list,cartSession,slide}
+// export {montagemAcai,option_generic_list,cartSession,slide}
 
 // Home()
 document.querySelector('.bi-chevron-left').addEventListener('click',()=>{
@@ -162,4 +166,4 @@ const carouselLoad=()=>{
 }
 carouselLoad()
 
-// document.querySelector('image_circle_contain').
+//Lista generica

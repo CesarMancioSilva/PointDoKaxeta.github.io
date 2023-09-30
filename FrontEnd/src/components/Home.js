@@ -1,5 +1,5 @@
 // import { homeSession } from "../../dist/main.js"
-import { slide } from "../../dist/main.js";
+// import { slide } from "../../dist/main.js";
 // const elementFromHtml=(html)=>{
 //     let htmlText = html.trim();
 //     return htmlText
@@ -79,4 +79,4 @@ import { slide } from "../../dist/main.js";
 //     slide.classList.add(slideClass)
 // }
 
-export {nextSlide,previousSlide}
+// export {nextSlide,previousSlide}

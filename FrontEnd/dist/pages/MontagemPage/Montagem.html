@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+        <link rel="stylesheet" href="../../output.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="bg-bgblack font-body">
+    <nav class="w-full border flex justify-between lg:px-48 xl:px-54 py-3 sm:px-10 cl:px-10 fixed top-0 bg-secondary z-50 ">
+        <div class="flex justify-between w-auto  gap-x-8">
+            <span class="toggle bi bi-list text-3xl cursor-pointer text-primary " ></span>
+            
+            <span class="iconCart bi bi-cart text-3xl cursor-pointer text-primary"></span>
+        </div>
+        <div class="flex justify-between w-auto  gap-x-16">
+            <img class='text-primary' src="../../imgs/KXT.svg" alt="">
+        </div>
+        
+    </nav>  
+    <ul class="menu bg-bgmenu menuLargeScreen delay-1000 z-50">
+        <a href="../../index.html"><li class="btnNavigate btnOption home sticky" > Inicio</li> </a>
+        <a href="Montagem.html"><li class="btnNavigate btnSelected montagem_acai"  >Montar açai</li></a>
+        <a href="../GenericPageList/GenericList.html"><li  class="btnNavigate btnOption genericList" >Sobremmesas</li></a>
+        <a href="../GenericPageList/GenericList.html"><li class="btnNavigate btnOption genericList" >Bebidas</li></a>
+        <li class="btnNavigate btnOption cart" >Carrinho</li>
+    </ul>
+
+    <div class="content w-full h-full cl:px-1  lg:px-48 xl:px-54 py-3 sm:px-5 mt-[60px]">
+        <div class="session montagem_acai_session  w-full h-auto  text-white px-2 transition ease-in-out duration-200 flex flex-col items-center mt-10 pb-32 ">
+
+                
+            <!-- <table class="mt-5  rounded-xl w-full  qcl:w-[520px] bg-secondary ">
+                <thead>
+                    <tr class="hidden">
+                        <th colspan="3" class="border-b border-primary rounded-lg font-bold text-center p-2 text-primary text-xl ">
+                            Montagem de açai - <span>Tamanho</span>
+                        </th>
+                    </tr>
+                    <tr> 
+                        <th colspan="3" class="border-b border-primary rounded-lg font-bold text-center p-5 text-primary text-xl">
+                            Açai xxxml - <span>Frutas 3 escolhas</span>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody class="last:border-b-0 block max-h-[455px] overflow-y-auto  py-3">
+
+                        <tr id="1" class="slide 1">
+                            <tr class="tamanho item block">
+                                <td class="w-full h-fit relative p-6 flex flex-row gap-5 sm:gap-10 cursor-pointer">
+                                    <img class="w-[100px] h-[100px]  bg-white"src="" alt="">
+                                    <ul>
+                                        <li>250ml</li>
+                                        <li>Preço R$</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Frutas: 1</li>
+                                        <li>Acompanhamentos: 3</li>
+                                        <li>Caldas: 1</li>
+                                    </ul>
+                                    <div class="absolute top-1/2 left-[50%] transform -translate-x-1/2 -translate-y-1/2 hover:bg-primary hover:bg-opacity-50 h-[calc(100%-15px)] w-[calc(100%-15px)]"></div>
+                                </td>
+                            </tr>
+                            <tr class="tamanho item block ">
+                                <td class="w-full h-fit relative p-6 flex flex-row gap-5 sm:gap-10 cursor-pointer">
+                                    <img class="w-[100px] h-[100px]  bg-white"src="" alt="">
+                                    <ul>
+                                        <li>400ml</li>
+                                        <li>Preço R$</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Frutas: 2</li>
+                                        <li>Acompanhamentos: 5</li>
+                                        <li>Caldas: 4</li>
+                                    </ul>
+                                    <div class="absolute top-1/2 left-[50%] transform -translate-x-1/2 -translate-y-1/2 bg-primary bg-opacity-50 h-[calc(100%-15px)] w-[calc(100%-15px)]"></div>
+                                </td>
+                            </tr>
+                            <tr class="tamanho item block ">
+                                <td class="w-full h-fit relative p-6 flex flex-row gap-5 sm:gap-10 cursor-pointer">
+                                    <img class="w-[100px] h-[100px]  bg-white"src="" alt="">
+                                    <ul>
+                                        <li>770ml</li>
+                                        <li>Preço R$</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Frutas: 5</li>
+                                        <li>Acompanhamentos: 11</li>
+                                        <li>Caldas: 4</li>
+                                    </ul>
+                                    <div class="absolute top-1/2 left-[50%] transform -translate-x-1/2 -translate-y-1/2 hover:bg-primary hover:bg-opacity-50 h-[calc(100%-15px)] w-[calc(100%-15px)]"></div>
+                                </td>
+                            </tr>
+                        </tr>
+
+                        <div id='2' class="slide w-full border">
+                            
+                            <div class="fruta item block w-full">
+                                <th class="w-full h-fit relative p-6 flex flex-row gap-10 cursor-pointer ">
+                                    
+                                    <div class="w-full flex justify-between">
+                                        Banana
+                                        
+                                        <div class="w-5 h-5 border-2 p-1 rounded-full flex items-center justify-center">
+                                           
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="absolute top-1/2 left-[50%] transform -translate-x-1/2 -translate-y-1/2 hover:bg-primary hover:bg-opacity-50 h-[calc(100%-15px)] w-[calc(100%-15px)]"></div>
+                                </th>
+                            </div>
+                            <div class="frutas item block">
+                                <th class="w-full  h-fit relative p-6 flex flex-row gap-10 cursor-pointer">
+                                    
+                                    <div class="w-full flex justify-between">
+                                        Morango
+                                        
+                                        <div class="w-5 h-5 border-2 p-1 rounded-full flex items-center justify-center">
+                                            <div class ='w-full h-full bg-white rounded-full'></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="absolute top-1/2 left-[50%] transform -translate-x-1/2 -translate-y-1/2 bg-primary bg-opacity-50 h-[calc(100%-15px)] w-[calc(100%-15px)]"></div>
+                                </th>
+                            </div>
+                        </div>
+                        
+
+                    </tbody>
+                    <tfoot class="border-t border-primary">
+                        <tr>
+                            <th class="p-6 flex justify-between items-center">
+                                <button  class="bg-primary text-bgblack px-4 rounded-md">Voltar</button>
+                                <div class="image_circle_contain flex gap-2">
+
+                                </div>
+                                <button class="bg-primary text-bgblack px-4 rounded-md">Próximo</button>
+                            </th>
+                        </tr>
+                    </tfoot>
+            </table> -->
+
+
+
+
+
+            <div class="tablet mt-5  rounded-xl  w-full sm:w-[500px] bg-secondary ">
+                <div class="table-header font-bold text-center p-5 text-primary text-xl">
+                    Titulo
+                </div>
+                <div style='height: 400px;'class="table-content max-h-[365px] block overflow-y-auto  border-t border-primary ">
+                    <div class="slide w-full ">
+                        <div style='padding:16px;'class="itemT relative w-full h-full flex gap-5 text-sm qcl:text-lg sm:gap-10">
+                            <img style='max-width:100px;'class="" src="../../imgs/250ml.png" alt="">
+                            <ul>
+                                <li>250ml</li>
+                                <li>Preço R$</li>
+                            </ul>
+                            <ul>
+                                <li>Frutas: 1</li>
+                                <li>Acompanhamentos: 3</li>
+                                <li>Caldas: 1</li>
+                            </ul>
+                            <div class="absolute cursor-pointer top-1/2 left-[50%] transform -translate-x-1/2 -translate-y-1/2 hover:bg-primary hover:bg-opacity-50 h-[calc(100%-15px)] w-[calc(100%-15px)]"></div>
+                        </div>
+                    
+                        <div style='padding:16px;'class="itemT w-full h-full flex gap-5 text-sm qcl:text-lg sm:gap-10 relative">
+                            <img style='max-width:100px;'class="" src="../../imgs/500ml.png" alt="">
+                            <ul>
+                                <li>500ml</li>
+                                <li>Preço R$</li>
+                            </ul>
+                            <ul>
+                                <li>Frutas: 1</li>
+                                <li>Acompanhamentos: 3</li>
+                                <li>Caldas: 1</li>
+                            </ul>
+                            <div class="absolute cursor-pointer top-1/2 left-[50%] transform -translate-x-1/2 -translate-y-1/2 hover:bg-primary hover:bg-opacity-50 h-[calc(100%-15px)] w-[calc(100%-15px)]"></div>
+                        </div>
+                        <div style='padding:16px;'class="itemT w-full h-full flex gap-5 text-sm qcl:text-lg sm:gap-10 relative">
+                            <img style='max-width:100px;'class="" src="../../imgs/750ml.png" alt="">
+                            <ul>
+                                <li>750ml</li>
+                                <li>Preço R$</li>
+                            </ul>
+                            <ul>
+                                <li>Frutas: 1</li>
+                                <li>Acompanhamentos: 3</li>
+                                <li>Caldas: 1</li>
+                            </ul>
+                            <div class="absolute cursor-pointer top-1/2 left-[50%] transform -translate-x-1/2 -translate-y-1/2 hover:bg-primary hover:bg-opacity-50 h-[calc(100%-15px)] w-[calc(100%-15px)]"></div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="slide w-full  ">
+                        <div style='padding:16px;'class="itemT w-full h-full flex justify-between relative items-center text-sm qcl:text-lg sm:gap-10">
+                            Banana
+                                        
+                            <div class="w-5 h-5 border-2 p-1 rounded-full flex items-center justify-center">
+                                <div class ='w-full h-full bg-white rounded-full'></div>
+                            </div>
+                            <div class="absolute cursor-pointer top-1/2 left-[50%] transform -translate-x-1/2 -translate-y-1/2 bg-primary bg-opacity-50 h-[calc(100%-15px)] w-[calc(100%-15px)]"></div>
+                        </div>
+                     
+                        <div style='padding:16px;'class="itemT w-full h-full flex justify-between items-center relative text-sm qcl:text-lg sm:gap-10">
+                            Morango
+                                        
+                            <div class="w-5 h-5 border-2 p-1 rounded-full flex items-center justify-center">
+                            </div>
+                            <div class="absolute cursor-pointer top-1/2 left-[50%] transform -translate-x-1/2 -translate-y-1/2 hover:bg-primary hover:bg-opacity-50 h-[calc(100%-15px)] w-[calc(100%-15px)]"></div>
+                        </div>
+                    
+                    </div>
+                    <div class="slide w-full  ">
+                        <div style='padding:16px;'class="itemT w-full h-full flex justify-between relative items-center text-sm qcl:text-lg sm:gap-10">
+                            Leite condensado
+                                        
+                            <div class="w-5 h-5 border-2 p-1 rounded-full flex items-center justify-center">
+                                <div class ='w-full h-full bg-white rounded-full'></div>
+                            </div>
+                            <div class="absolute cursor-pointer top-1/2 left-[50%] transform -translate-x-1/2 -translate-y-1/2 bg-primary bg-opacity-50 h-[calc(100%-15px)] w-[calc(100%-15px)]"></div>
+                        </div>
+                        <div style='padding:16px;'class="itemT w-full h-full flex justify-between items-center relative text-sm qcl:text-lg sm:gap-10">
+                            Caramelo
+                                        
+                            <div class="w-5 h-5 border-2 p-1 rounded-full flex items-center justify-center">
+                            </div>
+                            <div class="absolute cursor-pointer top-1/2 left-[50%] transform -translate-x-1/2 -translate-y-1/2 hover:bg-primary hover:bg-opacity-50 h-[calc(100%-15px)] w-[calc(100%-15px)]"></div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="table-footer border-t border-primary p-6 flex justify-between items-center">
+                    <a class="backHome"href="../../index.html"><button class=" bg-primary text-bgblack px-4 rounded-md ">Voltar</button></a>
+                    <button onclick="previousSlide()" class="backSlide bg-primary text-bgblack px-4 rounded-md hidden">Voltar</button>
+                    <div class="image_circle_contain flex gap-2">
+
+                    </div>
+                    <button onclick="nextSlide()" class="nextSlide bg-primary text-bgblack px-4 rounded-md ">Próximo</button>
+                    <button onclick="confirmSend()" class="openConfirmSend bg-primary text-bgblack px-4 rounded-md hidden">Enviar</button>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="errorMsg p-2 m-6 border-2 border-red rounded-lg bg-red bg-opacity-10">
+                Mensagem de erro
+            </div>
+            
+            <div class="flex gap-12">
+                <div class="flex justify-center flex-col items-center cursor pointer">
+        
+                    <span class="bi bi-instagram text-5xl mb-2 text-primary mt-14"></span>
+                    <h1>@pointdokaxeta</h1>
+                </div>
+                <div class="flex justify-center flex-col items-center cursor-pointer">
+        
+                    <span class="bi bi-whatsapp text-5xl mb-2 text-primary mt-14"></span>
+                    <h1>@pointdokaxeta</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Montagem.js"></script>
+</body>
+</html>

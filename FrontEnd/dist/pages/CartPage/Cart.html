@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+        <link rel="stylesheet" href="../../output.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="bg-bgblack font-body">
+    <nav class="w-full border flex justify-between lg:px-48 xl:px-54 py-3 sm:px-10 cl:px-10 fixed top-0 bg-secondary z-50 ">
+        <div class="flex justify-between w-auto  gap-x-8">
+            <span class="toggle bi bi-list text-3xl cursor-pointer text-primary " ></span>
+            
+            <span class="iconCart bi bi-cart text-3xl cursor-pointer text-primary"></span>
+        </div>
+        <div class="flex justify-between w-auto  gap-x-16">
+            <img class='text-primary' src="../../imgs/KXT.svg" alt="">
+        </div>
+        
+    </nav>  
+    <ul class="menu bg-bgmenu menuLargeScreen delay-1000 z-50">
+        <a href="../../index.html"><li class="btnNavigate btnOption home sticky" > Inicio</li> </a>
+        <a href="../MontagemPage/Montagem.html"><li class="btnNavigate btnSelected montagem_acai"  >Montar açai</li></a>
+        <a href="../GenericPageList/GenericList.html"><li  class="btnNavigate btnOption genericList" >Sobremmesas</li></a>
+        <a href="../GenericPageList/GenericList.html"><li class="btnNavigate btnOption genericList" >Bebidas</li></a>
+        <li class="btnNavigate btnOption cart" >Carrinho</li>
+    </ul>
+
+    <div class="content w-full h-full cl:px-1  lg:px-48 xl:px-54 py-3 sm:px-5 mt-[60px]">
+        <div class=" w-full h-auto text-white p-3  flex flex-col items-center mt-10 pb-32">
+            <div class="mt-5  rounded-xl w-full sm:w-[450px] bg-secondary ">
+                <div>
+                    <div>
+                        <div  style='padding: 16px;'class=" rounded-lg font-bold text-center text-primary text-xl">
+                            Carrinho de compras
+                        </div>
+                    </div>
+                    </div>
+                    <div style='max-height: 430px; overflow-y: auto;'class="flex border-t border-primary flex-col ">
+                        <div class="">
+                            <div  class="border-b text-center w-full p-6 flex justify-between">
+                                <div class="flex flex-col justify-start items-start gap-2 ">
+                                    <p class="flex justify-start border-b mb-2 w-fit">Açai - xxxml</p>
+                                    <p class="flex justify-start ">Manga</p>
+                                    <p class="flex justify-start ">Manga</p>
+                                    <p class="flex justify-start ">Macaco - R$2,00</p>
+                                    <p class="flex justify-start ">Chipamzé - R$2,00</p>
+                                    <p class="flex justify-start ">Gorila - $R2,00</p>
+                                </div>
+                                <div class="flex gap-2 items-center">
+                                    R$10,00
+                                    <span class="bi bi-trash-fill text-3xl cursor-pointer"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div  class=" text-center w-full p-6 flex justify-between items-center">
+                                <p style='max-width: 170px; text-align: left;'class="break-words  ">Bolo de pote sabor chocolate</p>
+                                <div class="flex gap-2 items-center">
+                                    R$10,00
+                                    <span class="bi bi-trash-fill text-red  text-3xl cursor-pointer"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div  class=" text-center w-full p-6 flex justify-between items-center">
+                                <p style='max-width: 170px; text-align: left;'class="break-words  ">Popo do ports</p>
+                                <div class="flex gap-2 items-center">
+                                    R$10,00
+                                    <span class="bi bi-trash-fill text-red  text-3xl cursor-pointer"></span>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
+                    <div class="border-t border-primary">
+                        <div>
+                            <div class="p-6 flex justify-between items-center">
+                            <div class="flex gap-3 flex-col-reverse qcl:flex-row ">
+                            <button  class="bg-primary text-bgblack px-4 rounded-md">Enviar pedido</button>
+                            
+                        </div>
+                        <h3 class="text-primary">Total: R$<span>20,00</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="p-6 bg-secondary mt-5 rounded-xl text-left w-full sm:w-[450px]">
+                    <h1  class="font-bold text-primary text-md sm:text-xl  text-left">Preencha as informações para o envio</h1>
+                    <div style="margin:10px 0px;"class="line border border-primary w-full"></div>
+                    <div class="flex gap-10">
+                        <div class="contain_input">
+                            <label>Nome</label>
+                            <input type="text" class="rounded-md w-full">
+                        </div>
+                        <div class="contain_input">
+                            <label class="block">Cidade</label>
+                            <input type="text "class="rounded-md w-full">
+                        </div>
+                    </div>
+                    <div class="contain_input w-full  flex flex-col mt-5">
+                        <label class="block">Rua e número</label>
+                        <input type="text block w-full"class="rounded-md">
+                    </div>
+                    <div class="contain_input w-full  flex flex-col mt-5">
+                        <label class="block">Forma de pagamento</label>
+                        
+                        <div class="flex gap-5 mt-2">
+
+                            <div class="flex items-center gap-2 mb-4">
+                                <input type="radio" value="" name="default-radio" class="w-4 h-4 ">
+                                <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Pix</label>
+                            </div>
+                            <div class="flex items-center gap-2 ">
+                                <input checked type="radio" value="" name="default-radio" class="w-4 h-4 t">
+                                <label for="default-radio-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Cartão</label>
+                            </div>
+                            <div class="flex items-center gap-2 ">
+                                <input checked type="radio" value="" name="default-radio" class="w-4 h-4 t">
+                                <label for="default-radio-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Dinheiro</label>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="contain_input w-full  flex flex-col mt-5">
+                        <label class="block">Observações</label>
+                        <textarea name="" id="" cols="30" rows="3" class="rounded-md"></textarea>
+                    </div>
+                    <div style="margin:10px 0px;"class="line border border-primary w-full"></div>
+                    <div class="flex justify-between w-full mt-5">
+                        <button class="bg-primary text-bgblack px-4 rounded-md">Voltar</button>
+                        <button class="bg-primary text-bgblack px-4 rounded-md">Enviar</button>
+                    </div>
+                </form>
+                <div class="flex gap-12">
+                    <div class="flex justify-center flex-col items-center cursor pointer">
+
+                        <span class="bi bi-instagram text-5xl mb-2 text-primary mt-14"></span>
+                        <h1>@pointdokaxeta</h1>
+                    </div>
+                    <div class="flex justify-center flex-col items-center cursor-pointer">
+
+                        <span class="bi bi-whatsapp text-5xl mb-2 text-primary mt-14"></span>
+                        <h1>@pointdokaxeta</h1>
+                    </div>
+                </div>
+                
+        </div>
+    </div>
+    <script src="Cart.js"></script>
+</body>
+</html>
