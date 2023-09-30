@@ -48,12 +48,21 @@ document.querySelector('.toggle').addEventListener('click',()=>{
 
 
 
-document.querySelector('.iconCart').addEventListener('mouseover',(e)=>{
-    e.target.classList.remove('bi-cart')
-    e.target.classList.add('bi-cart-fill')
-})
-document.querySelector('.iconCart').addEventListener('mouseout',(e)=>{
-    e.target.classList.remove('bi-cart-fill')
-    e.target.classList.add('bi-cart')
-})
+const confirmSend=()=>{
+    document.querySelector(".formCard").classList.add('hidden')
+    document.querySelector(".completeSend").classList.remove('hidden')
+}
+const openForm =()=>{
+    document.querySelector(".cartCard").classList.add('hidden')
+    document.querySelector(".formCard").classList.remove('hidden')
+}
+
+// document.querySelector('.iconCart').addEventListener('mouseover',(e)=>{
+//     e.target.classList.remove('bi-cart')
+//     e.target.classList.add('bi-cart-fill')
+// })
+// document.querySelector('.iconCart').addEventListener('mouseout',(e)=>{
+//     e.target.classList.remove('bi-cart-fill')
+//     e.target.classList.add('bi-cart')
+// })
 

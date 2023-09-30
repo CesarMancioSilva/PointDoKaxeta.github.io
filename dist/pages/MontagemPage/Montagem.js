@@ -138,3 +138,7 @@ const changeSlide=()=>{
         }
     })
 }
+const confirmSend=()=>{
+    document.querySelector(".tablet").classList.add('hidden')
+    document.querySelector(".completeSend").classList.remove('hidden')
+}

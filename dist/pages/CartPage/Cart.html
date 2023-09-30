@@ -20,17 +20,17 @@
         </div>
         
     </nav>  
-    <ul class="menu bg-bgmenu menuLargeScreen delay-1000 z-50">
+    <ul class="menu bg-bgmenu menuLargeScreen z-50">
         <a href="../../index.html"><li class="btnNavigate btnOption home sticky" > Inicio</li> </a>
-        <a href="../MontagemPage/Montagem.html"><li class="btnNavigate btnSelected montagem_acai"  >Montar açai</li></a>
+        <a href="../MontagemPage/Montagem.html"><li class="btnNavigate btnOption montagem_acai"  >Montar açai</li></a>
         <a href="../GenericPageList/GenericList.html"><li  class="btnNavigate btnOption genericList" >Sobremmesas</li></a>
         <a href="../GenericPageList/GenericList.html"><li class="btnNavigate btnOption genericList" >Bebidas</li></a>
-        <a href="Cart.html"><li class="btnNavigate btnOption cart" >Carrinho</li></a>
+        <a href="Cart.html"><li class="btnNavigate btnSelected cart" >Carrinho</li></a>
     </ul>
 
     <div class="content w-full h-full cl:px-1  lg:px-48 xl:px-54 py-3 sm:px-5 mt-[60px]">
         <div class=" w-full h-auto text-white p-3  flex flex-col items-center mt-10 pb-32">
-            <div class="mt-5  rounded-xl w-full sm:w-[450px] bg-secondary ">
+            <div class="cartCard mt-5  rounded-xl w-full sm:w-[450px] bg-secondary ">
                 <div>
                     <div>
                         <div  style='padding: 16px;'class=" rounded-lg font-bold text-center text-primary text-xl">
@@ -80,21 +80,21 @@
                         <div>
                             <div class="p-6 flex justify-between items-center">
                             <div class="flex gap-3 flex-col-reverse qcl:flex-row ">
-                            <button  class="bg-primary text-bgblack px-4 rounded-md">Enviar pedido</button>
+                            <button onclick="openForm()" class="bg-primary text-bgblack px-4 rounded-md">Finalizar pedido</button>
                             
                         </div>
-                        <h3 class="text-primary">Total: R$<span>20,00</span></h3>
+                        <h3 class="text-primary text-lx">Total: R$20,00</h3>
                             </div>
                         </div>
                     </div>
                 </div>
-                <form class="p-6 bg-secondary mt-5 rounded-xl text-left w-full sm:w-[450px]">
+                <form class="formCard p-6 bg-secondary mt-5 rounded-xl text-left w-full sm:w-[450px] hidden">
                     <h1  class="font-bold text-primary text-md sm:text-xl  text-left">Preencha as informações para o envio</h1>
                     <div style="margin:10px 0px;"class="line border border-primary w-full"></div>
                     <div class="flex gap-10">
                         <div class="contain_input">
                             <label>Nome</label>
-                            <input type="text" class="rounded-md w-full">
+                            <input type="text" class="rounded-md w-full border shadow">
                         </div>
                         <div class="contain_input">
                             <label class="block">Cidade</label>
@@ -130,16 +130,16 @@
                     </div>
                     <div style="margin:10px 0px;"class="line border border-primary w-full"></div>
                     <div class="flex justify-between w-full mt-5">
-                        <button class="bg-primary text-bgblack px-4 rounded-md">Voltar</button>
-                        <button class="bg-primary text-bgblack px-4 rounded-md">Enviar</button>
+                        <div class="bg-primary text-bgblack px-4 rounded-md">Voltar</div>
+                        <div onclick="confirmSend()"class="bg-primary text-bgblack px-4 rounded-md">Enviar</div>
                     </div>
                 </form>
 
-                <div style="height: 335px;" class="completeSend w-full sm:w-[500px] sm:h-[360px] bg-secondary mt-2 rounded-lg flex flex-col justify-center items-center">
+                <div style="height: 335px;" class="completeSend w-full sm:w-[500px] sm:h-[360px] bg-secondary mt-2 rounded-lg flex flex-col justify-center items-center hidden">
                     <span style="font-size: 90px;" class="bi  bi-box-seam-fill text-6xl"></span>
                     <h2>Seu pedido foi entregue</h2>
                     <div class="flex gap-5 mt-5">
-                        <button class="bg-primary text-bgblack px-4 rounded-md">Voltar home</button>
+                        <a href="../../index.html"><button class="bg-primary text-bgblack px-4 rounded-md">Voltar home</button></a>
                     </div>
                 </div>
     
@@ -148,16 +148,21 @@
                 </div>
 
                 <div class="flex gap-12">
-                    <div class="flex justify-center flex-col items-center cursor pointer">
-
-                        <span class="bi bi-instagram text-5xl mb-2 text-primary mt-14"></span>
-                        <h1>@pointdokaxeta</h1>
-                    </div>
-                    <div class="flex justify-center flex-col items-center cursor-pointer">
-
-                        <span class="bi bi-whatsapp text-5xl mb-2 text-primary mt-14"></span>
-                        <h1>@pointdokaxeta</h1>
-                    </div>
+                    <a href="https://www.instagram.com/pointdokaxeta/">
+    
+                        <div class="flex justify-center flex-col items-center cursor pointer">
+                
+                            <span class="bi bi-instagram text-5xl mb-2 text-primary mt-14"></span>
+                            <h1>@pointdokaxeta</h1>
+                        </div>
+                    </a>
+                    <a href="https://bit.ly/pointdokaxeta">
+                        <div class="flex justify-center flex-col items-center cursor-pointer">
+            
+                            <span class="bi bi-whatsapp text-5xl mb-2 text-primary mt-14"></span>
+                            <h1>(13)98863-1351</h1>
+                        </div>
+                    </a>
                 </div>
                 
         </div>

@@ -57,4 +57,8 @@ document.querySelector('.iconCart').addEventListener('mouseout',(e)=>{
     e.target.classList.add('bi-cart')
 })
 
+const confirmSend=()=>{
+    document.querySelector(".tablet").classList.add('hidden')
+    document.querySelector(".completeSend").classList.remove('hidden')
+}
 
