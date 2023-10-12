@@ -12,12 +12,12 @@
     <nav class="w-full border flex justify-between lg:px-48 xl:px-54 py-3 sm:px-10 cl:px-10 fixed top-0 bg-secondary z-50 ">
         <div class="flex justify-between w-auto  gap-x-8">
             <span class="toggle bi bi-list text-3xl cursor-pointer text-primary " ></span>
-            <a href="pages/CartPage/Cart.html"><span class="iconCart bi bi-cart-fill text-3xl cursor-pointer text-primary"></span></a>
-            
+
         </div>
-        <div class="flex justify-between w-auto  gap-x-16">
-            <img class='text-primary' src="../../imgs/KXT.svg" alt="">
-        </div>
+        <img class='text-primary' src="../../imgs/KXT.svg" alt="">
+        <a href="Cart.html"><span class="iconCart bi bi-cart-fill text-3xl cursor-pointer text-primary"></span></a>
+        
+       
         
     </nav>  
     <ul class="menu bg-bgmenu menuLargeScreen z-50">
@@ -42,12 +42,11 @@
                         <div class="">
                             <div  class="border-b text-center w-full p-6 flex justify-between">
                                 <div class="flex flex-col justify-start items-start gap-2 ">
-                                    <p class="flex justify-start border-b mb-2 w-fit">Açai - xxxml</p>
-                                    <p class="flex justify-start ">Manga</p>
-                                    <p class="flex justify-start ">Manga</p>
-                                    <p class="flex justify-start ">Macaco - R$2,00</p>
-                                    <p class="flex justify-start ">Chipamzé - R$2,00</p>
-                                    <p class="flex justify-start ">Gorila - $R2,00</p>
+                                    <p class="flex justify-start border-b mb-2 w-fit">Açai - 500ml</p>
+                                    
+                                    <p class="flex justify-start ">Adicional 1 - R$2,00</p>
+                                    <p class="flex justify-start ">Adicional 2 - R$2,00</p>
+                                    <p class="flex justify-start ">Adicional 3 - $R2,00</p>
                                 </div>
                                 <div class="flex gap-2 items-center">
                                     R$10,00
@@ -60,7 +59,7 @@
                                 <p style='max-width: 170px; text-align: left;'class="break-words  ">Bolo de pote sabor chocolate</p>
                                 <div class="flex gap-2 items-center">
                                     R$10,00
-                                    <span class="bi bi-trash-fill text-red  text-3xl cursor-pointer"></span>
+                                    <span class="bi bi-trash-fill text-3xl cursor-pointer"></span>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +68,7 @@
                                 <p style='max-width: 170px; text-align: left;'class="break-words  ">Popo do ports</p>
                                 <div class="flex gap-2 items-center">
                                     R$10,00
-                                    <span class="bi bi-trash-fill text-red  text-3xl cursor-pointer"></span>
+                                    <span class="bi bi-trash-fill  text-3xl cursor-pointer"></span>
                                 </div>
                             </div>
                         </div>
@@ -88,64 +87,122 @@
                         </div>
                     </div>
                 </div>
-                <form class="formCard p-6 bg-secondary mt-5 rounded-xl text-left w-full sm:w-[450px] hidden">
-                    <h1  class="font-bold text-primary text-md sm:text-xl  text-left">Preencha as informações para o envio</h1>
-                    <div style="margin:10px 0px;"class="line border border-primary w-full"></div>
-                    <div class="flex gap-10">
-                        <div class="contain_input">
-                            <label>Nome</label>
-                            <input type="text" class="rounded-md w-full border shadow">
-                        </div>
-                        <div class="contain_input">
-                            <label class="block">Cidade</label>
-                            <input type="text "class="rounded-md w-full">
-                        </div>
-                    </div>
-                    <div class="contain_input w-full  flex flex-col mt-5">
-                        <label class="block">Rua e número</label>
-                        <input type="text block w-full"class="rounded-md">
-                    </div>
-                    <div class="contain_input w-full  flex flex-col mt-5">
-                        <label class="block">Forma de pagamento</label>
-                        
-                        <div class="flex gap-5 mt-2">
 
-                            <div class="flex items-center gap-2 mb-4">
-                                <input type="radio" value="" name="default-radio" class="w-4 h-4 ">
-                                <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Pix</label>
+
+                <form class="formCard p-6 bg-secondary mt-5 rounded-xl text-left sm:w-[600px]  cl:w-full hidden">
+                    <h1  class="font-bold text-primary text-xl w-full text-center sm:text-2xl  text-left">Insira as informações para envio</h1>
+                    <div style="margin:10px 0px;"class="line border border-primary w-full"></div>
+                    <div class=" ">
+                        <div class="  flex cl:flex-col flex-row qcl:justify-between gap-3">
+                            <div  class="division  cl:w-full qcl:w-[50%] sm:w-[50%]  ">
+                                <h1>Nome</h1>
+                                <input style="padding: 8px 10px;" type="text" placeholder="Como devemos chama-lo" class="w-full text-bgblack rounded-md">
                             </div>
-                            <div class="flex items-center gap-2 ">
-                                <input checked type="radio" value="" name="default-radio" class="w-4 h-4 t">
-                                <label for="default-radio-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Cartão</label>
+                            <div  class="division  cl:w-full qcl:w-[50%] sm:w-[50%]  ">
+                                <h1>Celular</h1>
+                                <input style="padding: 8px 10px;" type="tel" class="w-full text-bgblack rounded-md" placeholder="(xx) xxxxx-xxxx" required>
                             </div>
-                            <div class="flex items-center gap-2 ">
-                                <input checked type="radio" value="" name="default-radio" class="w-4 h-4 t">
-                                <label for="default-radio-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Dinheiro</label>
+                        </div>
+
+                        <div class="addressOp">
+                            <div style="margin-top:10px;"class="  flex cl:flex-col flex-row qcl:justify-between gap-3 ">
+                                <div  class="division  cl:w-full qcl:w-[50%]  sm:w-[50%]  ">
+                                    <h1>CEP</h1>
+                                        <input style="padding: 8px 10px;" type="text" placeholder="xxxxx-xxx" class="w-full text-bgblack rounded-md">
+                                </div>
+                                <div  class="division     cl:w-full qcl:w-[50%]  sm:w-[50%] ">
+                                    <h1>Cidade</h1>
+                                    <select  style="padding: 8px 10px;"name="select" class="w-full text-bgblack rounded-md">
+                                        <option value="" disabled selected></option>
+                                        <option value="valor2">São Vicente</option>
+                                        <option value="valor3">Santos</option>
+                                        <option value="valor3">Praia Grande</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>                       
-                    </div>
-                    <div class="contain_input w-full  flex flex-col mt-5">
-                        <label class="block">Observações</label>
-                        <textarea name="" id="" cols="30" rows="3" class="rounded-md"></textarea>
+
+                    
+                            
+                            <div style="margin-top:10px;"class=" flex justify-between gap-3 cl:flex-wrap sm:flex-nowrap">
+                                <div  class="division cl:w-[47%] sm:w-auto"">
+                                    <h1>Bairro</h1>
+                                    <input style="padding: 8px 10px;" type="text"  class="w-full text-bgblack rounded-md">
+                                </div>
+                                <div  class="division  cl:w-[47%]  sm:w-auto">
+                                    <h1>Numero</h1>
+                                    <input style="padding: 8px 10px;" type="text" " class="w-full text-bgblack rounded-md">
+                                </div>
+                                <div  class="division  cl:w-full sm:w-auto">
+                                    <h1>Rua</h1>
+                                    <input style="padding: 8px 10px;" type="text" " class="w-full text-bgblack rounded-md">
+                                </div>
+                            </div>
+                        
+
+                            <h1 style="margin-top:10px;">Complemento</h1>
+                            <input style="padding: 8px 10px;" type="text" placeholder="exemplo: Casa dos fundos" class="w-full text-bgblack rounded-md">
+                        </div>
+                        <div style="margin-top:15px;"class='flex gap-3  '>
+                            <div class="flex gap-2">
+                                <input id='retirar' class='w-6 h-6 rounded-md cursor-pointer'type="checkbox">
+                                <label for="retirar" class="cursor-pointer">Retirar no local</label>
+                            </div>
+                            <div class="comerLocal flex gap-2 items-center hidden">
+                                <input id='comer' class='w-6 h-6 rounded-md cursor-pointer'type="checkbox">
+                                <label for="comer" class="cursor-pointer">Comer no local</label>
+                            </div>
+                            
+                            
+                        </div>
+                        <h1 style="margin-top:10px;">Forma de pagamento</h1>
+                        <select  style="padding: 8px 10px;"name="select" class="pagOp w-full text-bgblack rounded-md">
+                            <option value="" disabled selected></option>
+                            <option value="pix">Pix</option>
+                            <option value="valor3">Outra opção</option>
+                        </select>
+                        <h1 style="margin-top:10px;">Observações</h1>
+                        <textarea name="" id="" rows="5" class="rounded-md w-full text-bgblack p-3" placeholder="Adicione aqui algum comentario"></textarea>
+                        <h1 class="text-primary text-xl mt-2">Taxa de entrega: R$00,00</h1>
+                        <div style="margin-top:8px ;" class="errorMsg p-2 border-2 border-red rounded-lg bg-red bg-opacity-10 text-center break-words">
+                            Mensagem de erro
+                            Mensagem de erro
+                            Mensagem de erro
+                            
+                        </div>
                     </div>
                     <div style="margin:10px 0px;"class="line border border-primary w-full"></div>
                     <div class="flex justify-between w-full mt-5">
-                        <div class="bg-primary text-bgblack px-4 rounded-md">Voltar</div>
-                        <div onclick="confirmSend()"class="bg-primary text-bgblack px-4 rounded-md">Enviar</div>
+                        <div onclick="backForm()"  class="bg-primary text-bgblack px-4 rounded-md">Voltar</div>
+                        <div onclick="confirmSend()"class="bg-primary text-bgblack px-4 rounded-md cursor-pointer">Enviar</div>
                     </div>
+                    
                 </form>
 
-                <div style="height: 335px;" class="completeSend w-full sm:w-[500px] sm:h-[360px] bg-secondary mt-2 rounded-lg flex flex-col justify-center items-center hidden">
+                <div style="height: 335px;" class="completeSend w-full sm:w-[400px] sm:h-[360px] bg-secondary mt-2 rounded-lg flex flex-col justify-center items-center hidden">
                     <span style="font-size: 90px;" class="bi  bi-box-seam-fill text-6xl"></span>
-                    <h2>Seu pedido foi entregue</h2>
+                    <h1 class="text-xl mt-2">Seu pedido foi entregue</h1>
+
+                    <h2 class="mt-4">Acompanhe o andamento via whatsapp</h2>
                     <div class="flex gap-5 mt-5">
                         <a href="../../index.html"><button class="bg-primary text-bgblack px-4 rounded-md">Voltar home</button></a>
                     </div>
                 </div>
-    
-                <div class="errorMsg p-2 m-6 border-2 border-red rounded-lg bg-red bg-opacity-10">
-                    Mensagem de erro
+
+                <div style="border-top:14px solid #E1D652;" class="pixCard w-full sm:w-[400px] bg-secondary mt-2 rounded-lg flex flex-col justify-center items-center  p-6 hidden">
+                    <h1 class="text-xl text-primary">Pagamento Pix para envio</h1>
+                    <img class='w-2/3 mt-5' src="../../imgs/qr-code-novo-fw-300x300-png.png" alt="">
+                    <h1 class="text-primary text-xl mt-4 mb-4">Total: R$00,00</h1>
+                    <h1 class="text-xl">Chave do pix</h1>
+                    <div class="flex mt-2 w-[90%] ">
+                        <div style="border-top-right-radius: 0; border-bottom-right-radius: 0;" class="rounded-lg bg-primary text-bgblack p-2 cursor-pointer">
+                            Copiar
+                        </div>
+                        <input style="border-top-left-radius: 0; border-bottom-left-radius: 0;" type="text" class ='px-2 rounded-lg w-full'value='ahsuahsuahsuahsuahsudakjhdaudheahsuahsuahsuahsuahsudakjhdaudhe' disabled>
+                    </div>
+                    <h1 class="mt-8">Destinatario: Melissa Fedida</h1>
                 </div>
+    
+                
 
                 <div class="flex gap-12">
                     <a href="https://www.instagram.com/pointdokaxeta/">

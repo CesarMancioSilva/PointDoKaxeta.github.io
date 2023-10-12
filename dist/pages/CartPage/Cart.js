@@ -50,13 +50,21 @@ document.querySelector('.toggle').addEventListener('click',()=>{
 
 const confirmSend=()=>{
     document.querySelector(".formCard").classList.add('hidden')
-    document.querySelector(".completeSend").classList.remove('hidden')
+    if(document.querySelector(".pagOp").value == 'pix'){
+        document.querySelector('.pixCard').classList.remove('hidden')
+    }else{
+
+        document.querySelector(".completeSend").classList.remove('hidden')
+    }
 }
 const openForm =()=>{
     document.querySelector(".cartCard").classList.add('hidden')
     document.querySelector(".formCard").classList.remove('hidden')
 }
-
+const backForm=()=>{
+    document.querySelector(".cartCard").classList.remove('hidden')
+    document.querySelector(".formCard").classList.add('hidden')
+}
 // document.querySelector('.iconCart').addEventListener('mouseover',(e)=>{
 //     e.target.classList.remove('bi-cart')
 //     e.target.classList.add('bi-cart-fill')
@@ -65,4 +73,13 @@ const openForm =()=>{
 //     e.target.classList.remove('bi-cart-fill')
 //     e.target.classList.add('bi-cart')
 // })
+document.getElementById('retirar').addEventListener('click',(e)=>{
+    if(e.target.checked){
+        document.querySelector(".addressOp").style.display="none"
+        document.querySelector(".comerLocal").style.display="flex"
+    }else{
+        document.querySelector(".addressOp").style.display="block"
+        document.querySelector(".comerLocal").style.display="none"
+    }
+})
 

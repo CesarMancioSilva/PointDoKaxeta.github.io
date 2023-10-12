@@ -3,8 +3,8 @@ module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
     screens:{
-      'cl':'100px',
-      "qcl":'480px',
+      'cl':{min:'100px',max:'479px'},
+      "qcl":{min:'480px',max:'575px'},
       'sm': '576px',
       // => @media (min-width: 576px) { ... }
 
