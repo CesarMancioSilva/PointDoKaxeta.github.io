@@ -62,3 +62,17 @@ const confirmSend=()=>{
     document.querySelector(".completeSend").classList.remove('hidden')
 }
 
+const nextSlideOp=()=>{
+    document.querySelector('.slideMain').classList.add('hidden')
+    document.querySelector('.slideOption').classList.remove('hidden')
+    document.querySelector('.backHome').classList.add('hidden')
+    document.querySelector('.backSlide').classList.remove('hidden')
+    document.querySelector('.openConfirmBtn').classList.remove('hidden')
+}
+const previousSlideOp=()=>{
+    document.querySelector('.slideMain').classList.remove('hidden')
+    document.querySelector('.slideOption').classList.add('hidden')
+    document.querySelector('.backHome').classList.add('hidden')
+    document.querySelector('.backSlide').classList.remove('hidden')
+    document.querySelector('.openConfirmBtn').classList.add('hidden')
+}
